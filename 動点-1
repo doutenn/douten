@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>問題1</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="menuClose.js"></script>
+    <script src="https://kit.fontawesome.com/7972d050b5.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <div class="wrapper">
+          <div class="header-logo">動点問題</div>
+          <i class ="fa fa-bars"></i>
+        </div>
+        <input type="checkbox" name="check" class="drawer-btn">
+        <div class="menu">
+          <ul>
+            <li><a href="cite.sample.html">トップページ</a></li>
+            <li><a href="動点-1.html">問題１</a></li>
+            <li><a href="動点-2.html">問題２</a></li>
+            <li><a href="動点-3.html">問題３</a></li>
+            <li><a href="動点-4.html">問題４</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="main">
+      <div class="copy-container">
+        <h1>動点問題<span>1</span></h1>
+      </div>
+      <center><iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfmhuMY9l1_oQlnLnjK7o_c609l_cqtjZXcJdfm1BaTyvpmCw/viewform?embedded=true" width="640" height="860" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe></center>
+    <div class="footer">
+      <div class="footer-logo">動点問題</div>
+      <div class="footer-list">
+        <ul>
+          <li>動点問題 図形</li>
+          <li>問題一覧</li>
+          <li>お問い合わせ</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
