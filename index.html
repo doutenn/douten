@@ -4,36 +4,49 @@
     <meta charset="utf-8">
     <title>動点問題</title>
     <link rel="stylesheet" href="stylesheet.css">
+    <script src="menuClose.js"></script>
+    <script src="https://kit.fontawesome.com/7972d050b5.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="header">
-      <div class="header-logo">動点問題</div>
-      <div class="header-list">
-        <ul>
-          <li>動点問題 図形</li>
-          <li>問題一覧</li>
-          <li>お問い合わせ</li>
-        </ul>
+    <header>
+      <div class="header">
+        <div class="wrapper">
+          <div class="header-logo">動点問題</div>
+          <i class ="fa fa-bars"></i>
+        </div>
+        <input type="checkbox" name="check" class="drawer-btn">
+        <div class="menu">
+          <ul>
+            <li><a href="cite.sample.html">トップページ</a></li>
+            <li><a href="動点-1.html">問題１</a></li>
+            <li><a href="動点-2.html">問題２</a></li>
+            <li><a href="動点-3.html">問題３</a></li>
+            <li><a href="動点-4.html">問題４</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
+    </header>
+
 
     <div class="main">
       <div class="copy-container">
         <h1>動点問題<span>.</span></h1>
       </div>
 
-    <!--辺AB移動-->
+    <!--点移動-->
     <center><canvas
       id="canvas"
-      width="800"
-      height="480"
+      width="1150"
+      height="1100"
       style = "      
         border: solid 1px #000000;
         box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         border-radius: 3px;"
     ></canvas>
-    <script src="./index.js"></script>
+    <script src="./index_3.js"></script>
     <p id="time"></p>
+    <label><input type="range" id="tate" min="1" max="10" step="1">縦の長さ</label>
+    <label></label><input type="range" id="yoko" min="1" max="10" step="1">横の長さ</label>
     <button id="start">スタート</button>
     <button id="stop">ストップ</button>
     <button id="reset">リセット</button></center>    
