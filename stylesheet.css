@@ -104,6 +104,10 @@ html {
 body {
     font-family: "cursive";
   }
+  img.douten {
+  width: 96px;
+  height: 65px;
+  }
   .div {
     width: 550px;
     margin: 100px auto 0 auto;
