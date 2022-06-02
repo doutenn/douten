@@ -4,29 +4,38 @@
     <meta charset="utf-8">
     <title>問題1</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="menuClose.js"></script>
-    <script src="https://kit.fontawesome.com/7972d050b5.js" crossorigin="anonymous"></script>
+
   </head>
   <body>
     <header>
-      <div class="header">
-        <div class="wrapper">
-          <div class="header-logo">動点問題</div>
-          <i class ="fa fa-bars"></i>
-        </div>
-        <input type="checkbox" name="check" class="drawer-btn">
-        <div class="menu">
-          <ul>
-            <li><a href="cite.sample.html">トップページ</a></li>
-            <li><a href="動点-1.html">問題１</a></li>
-            <li><a href="動点-2.html">問題２</a></li>
-            <li><a href="動点-3.html">問題３</a></li>
-            <li><a href="動点-4.html">問題４</a></li>
-          </ul>
-        </div>
-      </div>
-    </header>
+        <div class="hamburger-menu">
+            <input type="checkbox" id="menu-btn-check">
+            <label for="menu-btn-check" class="menu-btn"><span></span></label>
+            <!--ここからメニュー-->
+            <div class="menu-content">
+              <ul>
+                <li><a href="cite.sample.html">トップページ</a></li>
+                <ul>
+                  <p>動点問題</p>
+                  <li><a href="動点-1.html">問題１</a></li>
+                  <li><a href="動点-2.html">問題２</a></li>
+                  <li><a href="動点-3.html">問題３</a></li>
+                  <li><a href="動点-4.html">問題４</a></li>
+                  <li><a href="動点-5.html">問題５</a></li>
 
+                </ul>
+                <ul>
+                  <p>評価アンケート</p>
+                  <li><a href="動点-1.html">先生用</a></li>
+                  <li><a href="動点-2.html">生徒用</a></li>
+                  <li><a href="動点-3.html">全体を通して</a></li>
+                </ul>
+  
+              </ul>
+            </div>
+            <!--ここまでメニュー-->
+        </div>
+    </header>
     <div class="main">
       <div class="copy-container">
         <h1>動点問題<span>1</span></h1>
@@ -44,12 +53,3 @@
     </div>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
