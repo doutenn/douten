@@ -23,7 +23,7 @@ const main = () => {
 
     //速さのスライダー
     function inputChange3(event){
-      msg3.innerText = '速さは ' +  hayasaElement.value + ' cm/sです';
+      msg3.innerText = '辺AB間の速さは ' +  hayasaElement.value + ' cm/sです';
     }
     const hayasaElement = document.getElementById('hayasa');
     hayasaElement.addEventListener('input', inputChange3);
