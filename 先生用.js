@@ -39,25 +39,17 @@ const main = () => {
   
     // スタートボタンの変数定義
     var startButton;
-    // ストップボタンの変数定義
-    var stopButton;
     // リセットボタンの変数定義
     var resetButton;
       window.onload = function() {
         // スタートボタンが押されたかを判定
         startButton = document.getElementById('start');
-        // ストップボタンが押されたかを判定
-        stopButton = document.getElementById('stop');
         // リセットボタンが押されたかを判定
         resetButton = document.getElementById('reset');
     
         //スタートボタンが押された時の処理
         startButton.onclick = function() {
           start();
-        };
-        //ストップボタンが押された時の処理
-        stopButton.onclick = function() {
-          stop();
         };
         //リセットボタンが押された時の処理  
         resetButton.onclick = function() {
@@ -192,7 +184,7 @@ const main = () => {
         x = 150;
         y1 = tateElement.value*100;
         y2 = 100;
-        draw(); 
+        draw();
     }
   };
 
