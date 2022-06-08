@@ -7,39 +7,39 @@
   </head>
   <body>
     <header>
-        <div class="hamburger-menu">
-            <input type="checkbox" id="menu-btn-check">
-            <label for="menu-btn-check" class="menu-btn"><span></span></label>
-            <!--ここからメニュー-->
-            <div class="menu-content">
+      <div class="hamburger-menu">
+          <input type="checkbox" id="menu-btn-check">
+          <label for="menu-btn-check" class="menu-btn"><span></span></label>
+          <!--ここからメニュー-->
+          <div class="menu-content">
+            <ul>
+              <li><a href="index.html">トップページ</a></li>
               <ul>
-                <li><a href="index.html">トップページ</a></li>
-                <ul>
-                  <p>動点問題</p>
-                  <li><a href="動点-1.html">問題１</a></li>
-                  <li><a href="動点-2.html">問題２</a></li>
-                  <li><a href="動点-3.html">問題３</a></li>
-                  <li><a href="動点-4.html">問題４</a></li>
-                  <li><a href="動点-5.html">問題５</a></li>
-
-                </ul>
-                <ul>
-                  <p>評価アンケート</p>
-                  <li><a href="動点-1.html">先生用</a></li>
-                  <li><a href="動点-2.html">生徒用</a></li>
-                  <li><a href="動点-3.html">全体を通して</a></li>
-                </ul>
-  
+                <p>動点問題</p>
+                <li><a href="動点-1.html">問題１</a></li>
+                <li><a href="動点-2.html">問題２</a></li>
+                <li><a href="動点-3.html">問題３</a></li>
+                <li><a href="動点-4.html">問題４</a></li>
+                <li><a href="動点-5.html">問題５</a></li>
+                <li><a href="振り返り.html">振り返り</a></li>
               </ul>
-            </div>
-            <!--ここまでメニュー-->
-        </div>
-    </header>
+              <ul>
+                <p></p>
+                <li><a href="先生用.html">先生用図形</a></li>
+              </ul>
+              <ul>
+                <p></p>
+                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd9kQl6dU2JhBXW8K9JKjTfryzKWZXvOkueMIfmbjrw3qISDw/viewform">評価アンケート</a></li>
+              </ul>              
+            </ul>
+          </div>
+          <!--ここまでメニュー-->
+      </div>
+  </header>
 
     <div class="main">
       <div class="copy-container">
         <h1>先生用</h1>
-        
       </div>
       <center><canvas
         id="canvas"
@@ -50,26 +50,29 @@
           box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
           border-radius: 3px;"
       ></canvas>
-      <script src="./先生用.js"></script>
+      <script src="先生用.js"></script>
+      <h2>
+        問題に合わせて四角形の長さを先に設定してください。なお、動点の長さは技術上の問題から辺AB間のみ変更可能です。
+      </h2>
       <p id="time"></p>
       <p id="msg1"></p>
       <p id="msg2"></p>
       <p id="msg3"></p>
       <label><input type="range" id="tate" min="1" max="10" step="1">縦の長さ</label>
       <label><input type="range" id="yoko" min="1" max="10" step="1">横の長さ</label>
-      <label><input type="range" id="hayasa" min="1" max="10" step="1">速さ</label>
+      <label><input type="range" id="hayasa" min="1" max="10" step="1">辺AB間の速さ</label>
       <button id="start">スタート</button>
-      <button id="stop">ストップ</button>
       <button id="reset">リセット</button></center>    
-    <div class="footer">
-      <div class="footer-logo">動点問題</div>
-      <div class="footer-list">
-        <ul>
-          <li>動点問題 図形</li>
-          <li>問題一覧</li>
-          <li>お問い合わせ</li>
-        </ul>
+
+      <div class="footer">
+        <div class="footer-logo">動点問題</div>
+        <div class="footer-list">
+          <ul>
+            <li><a href="index.html">トップページ</a></li>
+            <li><a href="先生用.html">先生用</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd9kQl6dU2JhBXW8K9JKjTfryzKWZXvOkueMIfmbjrw3qISDw/viewform">評価アンケート</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
   </body>
 </html>
