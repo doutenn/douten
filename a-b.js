@@ -30,6 +30,7 @@ const main = () => {
    
     function draw(){
       if(y >= 100){
+        
        // canvas 内をまっさらにする
        ctx.clearRect(0, 0, 800, 480);
        //描画開始
@@ -74,9 +75,29 @@ const main = () => {
 
 
     function reset() {
-        y = 400;
-        draw();
-        
+      y=400;
+       // canvas 内をまっさらにする
+       ctx.clearRect(0, 0, 800, 480);
+       //描画開始
+       ctx.beginPath();
+       //円
+       ctx.arc(150, 400, 7, 0, Math.PI*2, false)
+       ctx.fill();
+        //四角形
+       ctx.moveTo(150, 100);
+       ctx.lineTo(150, 400);
+       ctx.lineTo(650, 400);
+       ctx.lineTo(650, 100);
+ 
+       ctx.font = "32px serif";
+       ctx.fillText("A",120,410);
+       ctx.fillText("B",120,110);
+       ctx.fillText("C",660,110);
+       ctx.fillText("D",660,410);
+        // 開始地点に戻って線を閉じる
+       ctx.closePath();
+       // 塗りつぶしを実行
+       ctx.stroke();
     };
   };
 
