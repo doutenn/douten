@@ -50,7 +50,9 @@ const main = () => {
         ctx.fillText("B",120,110);
         ctx.fillText("C",660,110);
         ctx.fillText("D",660,410);
-        ctx.fillText("P",110,y+10);
+        ctx.fillText("P",100,y+10);
+        ctx.fillText("6cm",80,260);
+        ctx.fillText("10cm",380,90);
 
          // 開始地点に戻って線を閉じる
        ctx.closePath();
@@ -69,7 +71,7 @@ const main = () => {
        ctx.arc(150, y, 7, 0, Math.PI*2, false)
        ctx.fill();
        ctx.font = "32px serif";
-       ctx.fillText("P",110,y+10);
+       ctx.fillText("P",100,y+10);
    
        //三角形
        ctx.moveTo(150, y);
@@ -95,6 +97,8 @@ const main = () => {
        ctx.fillText("B",120,110);
        ctx.fillText("C",660,110);
        ctx.fillText("D",660,410);
+       ctx.fillText("6cm",80,260);
+        ctx.fillText("10cm",380,90);
    
        // 開始地点に戻って線を閉じる
        ctx.closePath();
@@ -126,7 +130,9 @@ const main = () => {
        ctx.fillText("B",120,110);
        ctx.fillText("C",660,110);
        ctx.fillText("D",660,410);
-       ctx.fillText("P",110,y+10);
+       ctx.fillText("P",100,y+10);
+       ctx.fillText("6cm",80,260);
+        ctx.fillText("10cm",380,90);
         // 開始地点に戻って線を閉じる
        ctx.closePath();
        // 塗りつぶしを実行
